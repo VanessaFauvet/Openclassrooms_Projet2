@@ -26,25 +26,53 @@
  }
 
  h1 {
-     font-size: 26px;
+     font-size: 20px;
+     padding-left: 15px;
+ }
+
+ h1.activites, h1.main {
+     padding-left: 0;
  }
 
  p {
-     font-size: 15px;
+     font-size: 13px;
+ }
+
+ .plus {
+     padding-left: 15px;
+     padding-top: 10px;
  }
 
  #container-header {
      display: flex;
-     justify-content: space-between;
-     align-items: center;
  }
 
  .element1 {
-     padding-right: 300px;
+     padding: 10px 75% 0 10px;
  }
 
- 
- .card-hebergements, .card-populaires, .card-activites {
+ .element2, .element3 {
+     padding-top: 20px;
+     padding-left: 30px;
+     border-top:1px solid white;
+ }
+
+ .element2:hover, .element3:hover {
+    color: #0065fc;
+    border-top: 1px solid #0065fc;
+ }
+
+ #filter {
+     display: flex;
+     justify-content: space-around;
+     width: 75%;
+ }
+
+ .eco, .family, .romantic, .pets {
+     display: flex;
+ }
+
+ .card-hebergements, .card-populaires {
     background-color: white;
     border-radius: 10px;
     padding:10px;
@@ -61,7 +89,7 @@ article, aside {
 article {
     float: left;
     margin-right: 30px;
-    width: 60%;
+    width: 67%;
     height: auto;  
 }
 
@@ -69,28 +97,37 @@ article {
     color: #0065fc;
 }
 
- #container-hebergements {
+ #container-hebergements, #container-hebergements-2 {
      display: flex;
-     justify-content: space-around;
-     flex-wrap: wrap;
+     justify-content: space-between; 
  }
 
  .card-hebergements {
-     width: 250 px;
+     width: auto;
      height: 150px;
  }
 
  .picture {
      border-top-left-radius: 10px;
      border-top-right-radius: 10px;
+     max-width: 100%;
+     max-height: auto;
  }
 
  .card-body {
      padding-left: 5px;
  }
 
+ .fa-solid {
+     color: #0065fc;
+ }
+
+ .fa-regular {
+     color:#f2f2f2;
+ }
+
  aside {
-     width: 25%;
+     width: 27%;
      height: auto;
  }
 
@@ -102,22 +139,30 @@ article {
 
  .card-populaires {
     display: flex;
-    width: 350 px;
+    width: auto;
     height: 100px; 
  }
 
  #container-activites {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
+     margin-top: 10px;
+     margin-bottom: 30px;
+ }
+
+ .port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
+     border-radius: 10px;
+     background-color: white;
  }
 
  footer {
     background-color: #f2f2f2;
-    margin: 0;
  }
 
  #container-footer {
      display: flex;
-     width: 80%;
-     justify-content: space-evenly;
+ }
+
+ .section-footer {
+     padding-right: 250px;
  }
