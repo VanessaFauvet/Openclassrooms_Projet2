@@ -1,162 +1,351 @@
-*  {
+* {
     margin: 0;
     padding: 0;
 }
 
 #wrapper {
-    width: auto;
+    min-width: 992px;
     height: auto;
-    margin: 20px;
+    margin: 2% 2% 0 2%;
 }
 
 .box{
     box-sizing: border-box;
  }
 
- @media screen and (min-width: 992px) {
+h1 {
+    font-size: 26px;
+}
 
- }
+h2.activites, h1.main {
+    padding-left: 0;
+}
 
- @media screen and (min-width: 768px) and (max-width: 991px) {
+h2.activites {
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
 
- }
+h2 {
+    font-size: 22px;
+    padding: 3% 0 2% 2%;
+}
 
- @media screen and (max-width: 767px) {
+h3 {
+    font-size: 17px;
+    padding: 2% 0 0 2%;
+}
 
- }
+p {
+    font-size: 14px;
+    padding: 2% 0 0 2%;
+}
 
- h1 {
-     font-size: 20px;
-     padding-left: 15px;
- }
+.subtitle {
+    padding-left: 0;
+    margin-top: -30px;
+}
 
- h1.activites, h1.main {
-     padding-left: 0;
- }
+.plus {
+    padding-top: 2%;
+}
 
- p {
-     font-size: 13px;
- }
+#container-header {
+    display: flex;
+}
 
- .plus {
-     padding-left: 15px;
-     padding-top: 10px;
- }
+.element1 {
+    padding: 1% 0 0 1%;
+    width: 85%;
+}
 
- #container-header {
-     display: flex;
- }
+.element2, .element3 {
+    padding-top: 2%;
+    border-top:1px solid white;
+}
 
- .element1 {
-     padding: 10px 75% 0 10px;
- }
+.element2:hover, .element3:hover {
+   color: #0065fc;
+   border-top: 1px solid #0065fc;
+}
 
- .element2, .element3 {
-     padding-top: 20px;
-     padding-left: 30px;
-     border-top:1px solid white;
- }
+.element3 {
+    padding-left: 2%;
+}
 
- .element2:hover, .element3:hover {
+#search {
+    display: flex;
+    width: 25%;
+    height: 30px;
+    margin-top: 2%;
+}
+
+input, .location, .search-button {
+    line-height: 30px;
+}
+
+input {
+    border: none;
+}
+
+.location {
+   width: 10%;
+   background-color: #f2f2f2;
+   border-top-left-radius: 30%;
+   border-bottom-left-radius: 30%;
+   text-align: center;
+}
+
+.city {
+   font-size: 14px;
+   width: 50%;
+   border-top: 1px solid #f2f2f2;
+   border-bottom: 1px solid #f2f2f2;
+   padding-left: 2%;
+}
+
+.search-button {
+   background-color: #0065fc;
+   width: 30%;
+   color: white;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   text-align: center;
+}
+
+.search-icon {
+    display: none;
+}
+
+.icon, .icon-filter {
     color: #0065fc;
-    border-top: 1px solid #0065fc;
+}
+
+.icons {
+    display:flex;
+    margin-left: 1%;
  }
 
- #filter {
-     display: flex;
-     justify-content: space-around;
-     width: 75%;
+ .icon, .icon-grey {
+    padding-top: 2%;
  }
 
- .eco, .family, .romantic, .pets {
-     display: flex;
- }
+ .icon-grey {
+    color:#f2f2f2;
+}
 
- .card-hebergements, .card-populaires {
-    background-color: white;
-    border-radius: 10px;
-    padding:10px;
-    margin: 10px;
- }
+#filters, .filter, .icon-filter {
+    height: 30px;
+}
+
+#filters, .filter {
+    display: flex;
+    align-items: center;
+}
+
+#filters {
+    margin: 20px 0 20px 0;
+    width: 70%;
+}
+
+.filter {
+    border: 1px solid #f2f2f2;
+    border-radius:20px;
+    padding-right: 10px;
+    margin-left: 20px;
+    width: 20%;
+}
+
+.icon-filter {
+    width: 30px;
+    background-color: #deebff;
+    border-radius: 50px;
+    margin-left: -2px;
+    line-height: 30px;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 3px;
+}
+
+.filter:hover {
+    background-color: #deebff;
+}
+
+#infos {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.icon-infos {
+    color: #0065fc;
+    line-height: 5px;
+}
 
 article, aside {
     display: inline-block;
     background-color: #f2f2f2;
-    padding:30px 10px 30px 10px;
-    border-radius:10px;
+    padding: 1% 1% 30px 10px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > .plus,.card-hebergements, .card-populaires, .port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
+    color: black;
+}
+
+.name-card {
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 article {
     float: left;
-    margin-right: 30px;
+    margin-right: 2%;
     width: 67%;
     height: auto;  
 }
 
-.card-hebergements:hover .name, .card-populaires:hover .name {
-    color: #0065fc;
+#container-hebergements, #container-hebergements-2 {
+    display: flex;
+    justify-content: space-between; 
+    height: 205px;
+    margin-bottom: 1%;
 }
 
- #container-hebergements, #container-hebergements-2 {
-     display: flex;
-     justify-content: space-between; 
- }
-
- .card-hebergements {
-     width: auto;
-     height: 150px;
+.card-hebergements {
+    background-color: white;
+    padding:2% 2% 3% 2%;
+    margin-left: 5%;
+    border-radius: 10px;
+    width: 85%;
+    height: 180px;
  }
 
  .picture {
-     border-top-left-radius: 10px;
-     border-top-right-radius: 10px;
-     max-width: 100%;
-     max-height: auto;
- }
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit:cover;
+}
 
- .card-body {
-     padding-left: 5px;
- }
+.card-body {
+    padding-left: 1%;
+}
 
- .fa-solid {
-     color: #0065fc;
- }
+aside {
+    width: 27%;
+    height: auto;
+}
 
- .fa-regular {
-     color:#f2f2f2;
- }
-
- aside {
-     width: 27%;
-     height: auto;
- }
-
- #container-populaires {
+#head-populaire {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 0 5% 3%;
+}
+
+.icon-arrow {
+    padding-right: 5%;
+}
+
+#container-populaires {
+    display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: space-around;
+    height: 460px;
  }
 
  .card-populaires {
+    background-color: white;
+    padding: 1% 0 1% 1%;
+    margin: 0 5% 5% 5%;
+    border-radius: 10px;
     display: flex;
     width: auto;
-    height: 100px; 
+    height: 120px; 
+ }
+
+ .picture-populaires {
+    object-fit: cover;
+    width: 35%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+ .card-body-populaires {
+    padding-left: 1%;
+    padding-right: 2%;
+    height: 100%;
+}
+
+.icons-populaires {
+    display:flex;
+    margin-top: 15px;
+    margin-left: 5px;
  }
 
  #container-activites {
-     display: flex;
-     justify-content: space-between;
-     margin-top: 10px;
-     margin-bottom: 30px;
- }
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding: 10px 0 10px 0;
+}
 
- .port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
-     border-radius: 10px;
-     background-color: white;
- }
+.port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
+    border-radius: 10px;
+    background-color: white;
+    width: 285px;
+    border: 1px solid #f2f2f2;
+    box-shadow: 2px 5px 5px #f2f2f2;
+}
 
- footer {
+.picture-activites {
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    object-fit:cover;
+}
+
+.picture-activites-2 {
+    width: 100%;
+    height: 75%;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
+    object-fit:cover;
+}
+
+.pomegues, .notre-dame {
+    margin-bottom: 10%;
+}
+
+.port, .calanques {
+    height: 320px;
+}
+
+.pomegues {
+    height: 160px;
+}
+
+.frioul {
+    height: 130px;
+}
+
+.notre-dame, .longchamp {
+    height: 145px;
+}
+
+footer {
     background-color: #f2f2f2;
+    margin: -2%;
  }
 
  #container-footer {
@@ -164,5 +353,250 @@ article {
  }
 
  .section-footer {
-     padding-right: 250px;
+    padding-right: 20%;
+}
+
+.footer-title {
+    padding: 10% 0 2% 15%;
+}
+
+.footer-content {
+    padding: 10px 0 0 25px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {  
+#wrapper {
+    min-width: 768px;
+    max-width: 991px;
+}
+
+h1 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 10px;
+}
+
+.element1 {
+    width: 82%;
+}
+    
+.element2, .element3 {
+    padding-bottom: 2%;
+    border-bottom:1px solid white;
+}
+    
+.element2:hover, .element3:hover {
+    border-bottom: 1px solid #0065fc;
+}
+
+#search {
+    width: 35%;
+}
+
+#filters {
+    width: 80%;
+}
+
+.filter {
+    width: 25%;
+}
+
+#infos {
+    width: 35%;
+}
+
+article {
+    width: 63%;
+}
+
+#container-hebergements, #container-hebergements-2 {
+    height: 140px;
+}
+
+.card-hebergements {
+    height: 120px;
+ }
+
+.picture {
+    max-width: 100%;
+    height: 50%;
+    object-fit:cover;
+}
+
+aside {
+    width: 30%;
+}
+
+#container-populaires {
+    height: 306px;
+ }
+
+ .card-populaires {
+    height: 80px; 
+ }
+
+.port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
+    width: 170px;
+}
+
+.picture-activites {
+    height: 90%;
+}
+
+.picture-activites-2 {
+    height: 75%;
+}
+
+.pomegues, .notre-dame {
+    margin-bottom: 10%;
+}
+
+.port, .calanques {
+    height: 250px;
+}
+
+.pomegues {
+    height: 120px;
+}
+
+.frioul {
+    height: 110px;
+}
+
+.notre-dame, .longchamp {
+    height: 115px;
+}
+
+#container-footer {
+    width: 85%;
+}
+
+.section-footer {
+    padding-right: 15%;
+}
+
+.footer-content {
+    padding: 10px 0 0 15px;
+}
+ }
+
+
+ @media screen and (max-width: 767px) {
+#wrapper {
+    max-width: 767px;
+}
+
+h1 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 10px;
+}
+
+#filters {
+    width: 70%;
+}
+
+.filter {
+    width: 25%;
+}
+
+#infos {
+    width: 35%;
+}
+
+article {
+    width: 65%;
+    float: right;
+}
+
+#container-hebergements, #container-hebergements-2 {
+    height: 152px;
+}
+
+.card-hebergements {
+    height: 130px;
+ }
+
+.picture {
+    max-width: 100%;
+    height: 55%;
+    object-fit:cover;
+}
+
+aside {
+    width: 28%;
+}
+
+#container-populaires {
+    height: 340px;
+ }
+
+ .card-populaires {
+    height: 100px; 
+ }
+
+.port, .pomegues, .frioul, .calanques, .notre-dame, .longchamp {
+    width: 220px;
+}
+
+.picture-activites {
+    height: 90%;
+}
+
+.picture-activites-2 {
+    height: 75%;
+}
+
+.pomegues, .notre-dame {
+    margin-bottom: 10%;
+}
+
+.port, .calanques {
+    height: 250px;
+}
+
+.pomegues {
+    height: 120px;
+}
+
+.frioul {
+    height: 110px;
+}
+
+.notre-dame, .longchamp {
+    height: 115px;
+}
+
+#container-footer {
+    width: 85%;
+}
+
+.section-footer {
+    padding-right: 15%;
+}
+
+.footer-content {
+    padding: 10px 0 0 15px;
+}
  }
